@@ -379,7 +379,7 @@ export default function Home() {
               const glow = project.tone === "lime" ? "from-lime-300/15" : project.tone === "cyan" ? "from-cyan-300/15" : "from-violet-400/15";
 
               return (
-                <article key={project.title} className="group grid overflow-hidden rounded-3xl border border-white/[0.08] bg-[#0b0f14] transition duration-300 hover:-translate-y-1 hover:border-white/[0.15] lg:grid-cols-[0.85fr_1.15fr]">
+                <article key={project.title} className="group grid overflow-hidden rounded-3xl border border-white/[0.08] bg-[#0b0f14] transition duration-300 hover:border-white/[0.15] lg:grid-cols-[0.85fr_1.15fr]">
                   <div className={`relative min-h-72 overflow-hidden border-b border-white/[0.07] bg-gradient-to-br ${glow} via-[#0b1015] to-[#080b0e] p-6 lg:min-h-[30rem] lg:border-r lg:border-b-0 sm:p-9`}>
                     <div className="project-dots absolute inset-0 opacity-40" />
                     <div className="relative flex items-center justify-between">
