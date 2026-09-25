@@ -56,7 +56,7 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
           className="group/image relative aspect-[16/8.5] cursor-zoom-in overflow-hidden rounded-lg border border-white/10 bg-white text-left"
           aria-label={`Open ${images[0].alt}`}
         >
-          <Image src={images[0].src} alt={images[0].alt} fill sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover object-top transition duration-500 group-hover/image:scale-[1.015]" />
+          <Image src={images[0].src} alt={images[0].alt} fill sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover object-top" />
           <span className="absolute bottom-3 right-3 rounded-full border border-white/15 bg-black/65 px-3 py-1.5 text-[10px] font-medium text-white opacity-0 backdrop-blur transition group-hover/image:opacity-100">View full size</span>
         </button>
 
@@ -69,7 +69,7 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
               className="group/image relative aspect-[16/10] cursor-zoom-in overflow-hidden rounded-md border border-white/10 bg-white"
               aria-label={`Open ${image.alt}`}
             >
-              <Image src={image.src} alt={image.alt} fill sizes="(min-width: 1024px) 10vw, 22vw" className="object-cover object-top transition duration-300 group-hover/image:scale-105" />
+              <Image src={image.src} alt={image.alt} fill sizes="(min-width: 1024px) 10vw, 22vw" className="object-cover object-top" />
               <span className="absolute inset-0 bg-cyan-300/0 transition group-hover/image:bg-cyan-300/10" />
             </button>
           ))}
