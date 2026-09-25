@@ -14,9 +14,16 @@ type ProjectGalleryProps = {
 
 export default function ProjectGallery({ images }: ProjectGalleryProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const isViewerOpen = activeIndex !== null;
 
   useEffect(() => {
-    if (activeIndex === null) return;
+    if (!isViewerOpen) return;
+
+    const previousBodyStyles = {
+      overflow: document.body.style.overflow,
+      paddingRight: document.body.style.paddingRight,
+    };
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setActiveIndex(null);
@@ -25,13 +32,17 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
     };
 
     document.body.style.overflow = "hidden";
+    if (scrollbarWidth > 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
     window.addEventListener("keydown", handleKeyDown);
 
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflow = previousBodyStyles.overflow;
+      document.body.style.paddingRight = previousBodyStyles.paddingRight;
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [activeIndex, images.length]);
+  }, [isViewerOpen, images.length]);
 
   const showPrevious = () => setActiveIndex((current) => current === null ? null : (current - 1 + images.length) % images.length);
   const showNext = () => setActiveIndex((current) => current === null ? null : (current + 1) % images.length);
@@ -80,7 +91,15 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
           <button type="button" onClick={(event) => { event.stopPropagation(); showPrevious(); }} className="absolute left-3 z-10 flex size-11 items-center justify-center rounded-full border border-white/15 bg-black/50 text-2xl text-white transition hover:bg-white/15 sm:left-8" aria-label="Previous screenshot">‹</button>
 
           <div className="relative h-[78vh] w-[88vw] max-w-7xl" onClick={(event) => event.stopPropagation()}>
-            <Image src={images[activeIndex].src} alt={images[activeIndex].alt} fill sizes="90vw" className="object-contain" priority />
+            <Image
+              src={images[activeIndex].src}
+              alt={images[activeIndex].alt}
+              fill
+              sizes="90vw"
+              className="select-none object-contain"
+              draggable={false}
+              preload
+            />
           </div>
 
           <button type="button" onClick={(event) => { event.stopPropagation(); showNext(); }} className="absolute right-3 z-10 flex size-11 items-center justify-center rounded-full border border-white/15 bg-black/50 text-2xl text-white transition hover:bg-white/15 sm:right-8" aria-label="Next screenshot">›</button>
