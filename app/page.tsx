@@ -165,10 +165,10 @@ const projects = [
     github: "https://github.com/Troth99/quiz-app-angular",
     live: "https://quiz-app-3471b.web.app/",
     images: [
-      { src: "/projects/quiz-app-home-2026.png", alt: "Quiz App homepage" },
-      { src: "/projects/quiz-app-categories-2026.png", alt: "Quiz App category browser" },
+      { src: "/projects/quiz-app-home.png", alt: "Quiz App homepage" },
+      { src: "/projects/quiz-app-categories.png", alt: "Quiz App category browser" },
       { src: "/projects/quiz-app-login-2026.png", alt: "Quiz App login page" },
-      { src: "/projects/quiz-app-register-2026.png", alt: "Quiz App registration page" },
+      { src: "/projects/quiz-app-register.png", alt: "Quiz App registration page" },
       { src: "/projects/quiz-app-profile-2026.png", alt: "Quiz App signed-in profile" },
       { src: "/projects/quiz-app-quiz-2026.png", alt: "Quiz App quiz preview" },
       { src: "/projects/quiz-app-leaderboard-2026.png", alt: "Quiz App leaderboard" },
