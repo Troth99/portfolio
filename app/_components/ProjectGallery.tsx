@@ -53,10 +53,10 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
         <button
           type="button"
           onClick={() => setActiveIndex(0)}
-          className="group/image relative aspect-[16/8.5] cursor-zoom-in overflow-hidden rounded-lg border border-white/10 bg-white text-left"
+          className="group/image relative aspect-[16/8.5] cursor-zoom-in overflow-hidden rounded-lg border border-white/10 bg-[#0d1319] text-left"
           aria-label={`Open ${images[0].alt}`}
         >
-          <Image src={images[0].src} alt={images[0].alt} fill sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover object-top" />
+          <Image src={images[0].src} alt={images[0].alt} fill sizes="(min-width: 1024px) 40vw, 90vw" className="object-contain object-top" />
           <span className="absolute bottom-3 right-3 rounded-full border border-white/15 bg-black/65 px-3 py-1.5 text-[10px] font-medium text-white opacity-0 backdrop-blur transition group-hover/image:opacity-100">View full size</span>
         </button>
 
@@ -66,7 +66,7 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
               key={image.src}
               type="button"
               onClick={() => setActiveIndex(index + 1)}
-              className="group/image relative aspect-[16/10] cursor-zoom-in overflow-hidden rounded-md border border-white/10 bg-white"
+              className="group/image relative aspect-[16/10] cursor-zoom-in overflow-hidden rounded-md border border-white/10 bg-[#0d1319]"
               aria-label={`Open ${image.alt}`}
             >
               <Image src={image.src} alt={image.alt} fill sizes="(min-width: 1024px) 10vw, 22vw" className="object-cover object-top" />
