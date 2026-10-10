@@ -8,20 +8,20 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Alex Bratanov | Full-Stack Developer",
+  title: "Svezhen Bratanov | Full-Stack Developer",
   description:
-    "Portfolio of Alex Bratanov, a Full-Stack Developer building modern web applications with React, Next.js, Angular and Node.js.",
-  keywords: ["Alex Bratanov", "Full-Stack Developer", "React", "Angular", "Next.js", "Node.js", "TypeScript"],
-  authors: [{ name: "Alex Bratanov" }],
+    "Portfolio of Svezhen Bratanov, a Full-Stack Developer building modern web applications with React, Next.js, Angular and Node.js.",
+  keywords: ["Svezhen Bratanov", "Full-Stack Developer", "React", "Angular", "Next.js", "Node.js", "TypeScript"],
+  authors: [{ name: "Svezhen Bratanov" }],
   openGraph: {
-    title: "Alex Bratanov | Full-Stack Developer",
+    title: "Svezhen Bratanov | Full-Stack Developer",
     description: "Full-Stack Developer building modern applications with React, Angular, Next.js and Node.js.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Bratanov | Full-Stack Developer",
+    title: "Svezhen Bratanov | Full-Stack Developer",
     description: "Full-Stack Developer building modern applications with React, Angular, Next.js and Node.js.",
   },
 };

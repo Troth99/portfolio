@@ -227,9 +227,9 @@ export default function Home() {
       <div className="absolute -right-40 top-0 size-[34rem] rounded-full bg-lime-300/10 blur-[150px]" />
 
       <header className="relative z-20 mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
-        <a href="#" className="group flex items-center gap-3" aria-label="Alex Bratanov - Home">
+        <a href="#" className="group flex items-center gap-3" aria-label="Svezhen Bratanov - Home">
           <span className="flex size-9 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] font-mono text-sm font-bold text-lime-300 transition-colors group-hover:border-lime-300/40">SB</span>
-          <span className="hidden text-sm font-semibold tracking-wide text-zinc-200 sm:block">Alex Bratanov</span>
+          <span className="hidden text-sm font-semibold tracking-wide text-zinc-200 sm:block">Svezhen Bratanov</span>
         </a>
 
         <nav aria-label="Main navigation" className="hidden items-center gap-8 md:flex">
@@ -257,7 +257,7 @@ export default function Home() {
             AVAILABLE FOR OPPORTUNITIES
           </div>
 
-          <p className="mb-4 font-mono text-sm tracking-[0.2em] text-cyan-300">HI, I&apos;M ALEX BRATANOV</p>
+          <p className="mb-4 font-mono text-sm tracking-[0.2em] text-cyan-300">HI, I&apos;M SVEZHEN BRATANOV</p>
           <h1 className="max-w-3xl text-5xl font-semibold leading-[0.98] tracking-[-0.055em] text-balance sm:text-6xl lg:text-7xl xl:text-[5.25rem]">
             I build modern <span className="hero-gradient">web experiences.</span>
           </h1>
@@ -285,7 +285,7 @@ export default function Home() {
 
             <div className="overflow-x-auto p-6 font-mono text-[13px] leading-7 sm:p-8 sm:text-sm">
               <p><span className="text-fuchsia-400">const</span> <span className="text-cyan-300">developer</span> <span className="text-zinc-500">=</span> <span className="text-zinc-300">{'{'}</span></p>
-              <p className="pl-5"><span className="text-sky-300">name</span><span className="text-zinc-500">:</span> <span className="text-lime-300">&quot;Alex Bratanov&quot;</span><span className="text-zinc-500">,</span></p>
+              <p className="pl-5"><span className="text-sky-300">name</span><span className="text-zinc-500">:</span> <span className="text-lime-300">&quot;Svezhen Bratanov&quot;</span><span className="text-zinc-500">,</span></p>
               <p className="pl-5"><span className="text-sky-300">role</span><span className="text-zinc-500">:</span> <span className="text-lime-300">&quot;Full-Stack Developer&quot;</span><span className="text-zinc-500">,</span></p>
               <p className="pl-5"><span className="text-sky-300">skills</span><span className="text-zinc-500">:</span> <span className="text-zinc-300">[</span></p>
               <p className="pl-10 text-lime-300">&quot;React&quot;<span className="text-zinc-500">,</span> &quot;Next.js&quot;<span className="text-zinc-500">,</span></p>
@@ -324,7 +324,7 @@ export default function Home() {
 
             <div className="space-y-6 text-base leading-8 text-zinc-400 sm:text-lg">
               <p>
-                I&apos;m Alex, a developer based in Bulgaria. I graduated in Applied
+                I&apos;m Svezhen, a developer based in Bulgaria. I graduated in Applied
                 Linguistics and Information Technology—a combination that shaped both
                 the way I communicate and the way I approach complex problems.
               </p>
@@ -547,7 +547,7 @@ export default function Home() {
 
       <footer className="relative z-10 border-t border-white/[0.06]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-5 py-8 text-center sm:px-8 md:flex-row md:text-left lg:px-12">
-          <p className="text-xs text-zinc-600">© 2026 Alex Bratanov. Built with Next.js and TypeScript.</p>
+          <p className="text-xs text-zinc-600">© 2026 Svezhen Bratanov. Built with Next.js and TypeScript.</p>
           <div className="flex items-center gap-5 text-zinc-500">
             <a href="https://github.com/Troth99" target="_blank" rel="noreferrer" aria-label="GitHub" className="transition hover:text-lime-300"><GitHubIcon /></a>
             <a href="https://linkedin.com/in/svezhen-bratanov" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="transition hover:text-cyan-300"><LinkedInIcon /></a>
